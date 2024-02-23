@@ -3,6 +3,7 @@ package com.peach.peachfarm.block;
 import com.peach.peachfarm.PeachFarm;
 import com.peach.peachfarm.block.custom.*;
 import com.peach.peachfarm.item.ModItems;
+import com.peach.peachfarm.util.ModWoodTypes;
 import com.peach.peachfarm.worldgen.tree.PeachTreeGrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -72,6 +73,20 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> PEACH_SAPLING = registerBlock("peach_sapling",
             () -> new SaplingBlock(new PeachTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+
+
+    public static final RegistryObject<Block> PEACH_SIGN = BLOCKS.register("peach_sign",
+            () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.PEACH));
+    public static final RegistryObject<Block> PEACH_WALL_SIGN = BLOCKS.register("peach_wall_sign",
+            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.PEACH));
+
+    public static final RegistryObject<Block> PEACH_HANGING_SIGN = BLOCKS.register("peach_hanging_sign",
+            () -> new ModHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.PEACH));
+    public static final RegistryObject<Block> PEACH_WALL_HANGING_SIGN = BLOCKS.register("peach_wall_hanging_sign",
+            () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.PEACH));
+
+
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

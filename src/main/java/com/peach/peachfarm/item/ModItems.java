@@ -1,6 +1,9 @@
 package com.peach.peachfarm.item;
 
 import com.peach.peachfarm.PeachFarm;
+import com.peach.peachfarm.block.ModBlocks;
+import com.peach.peachfarm.entity.custom.ModBoatEntity;
+import com.peach.peachfarm.item.custom.ModBoatItem;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -22,6 +25,17 @@ public class ModItems {
 
     public static final RegistryObject<Item> PEACH_PIE = ITEMS.register("peach_pie",
             () -> new Item(new Item.Properties().food(ModFoods.PEACH_PIE)));
+
+    public static final RegistryObject<Item> PEACH_SIGN = ITEMS.register("peach_sign",
+            () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.PEACH_SIGN.get(), ModBlocks.PEACH_WALL_SIGN.get()));
+    public static final RegistryObject<Item> PEACH_HANGING_SIGN = ITEMS.register("peach_hanging_sign",
+            () -> new HangingSignItem(ModBlocks.PEACH_HANGING_SIGN.get(), ModBlocks.PEACH_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+
+    public static final RegistryObject<Item> PEACH_BOAT = ITEMS.register("peach_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.PEACH, new Item.Properties()));
+    public static final RegistryObject<Item> PEACH_CHEST_BOAT = ITEMS.register("peach_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.PEACH, new Item.Properties()));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

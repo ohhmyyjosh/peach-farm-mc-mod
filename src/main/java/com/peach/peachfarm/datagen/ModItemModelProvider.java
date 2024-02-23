@@ -50,6 +50,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.PEACH_JUICE);
         simpleItem(ModItems.PEACH_PIE);
 
+        simpleItem(ModItems.PEACH_SIGN);
+        simpleItem(ModItems.PEACH_HANGING_SIGN);
+
+        simpleItem(ModItems.PEACH_BOAT);
+        simpleItem(ModItems.PEACH_CHEST_BOAT);
+
         saplingItem(ModBlocks.PEACH_SAPLING);
 
     }

@@ -3,6 +3,8 @@ package com.peach.peachfarm;
 import com.mojang.logging.LogUtils;
 import com.peach.peachfarm.block.ModBlocks;
 import com.peach.peachfarm.block.entity.ModBlockEntities;
+import com.peach.peachfarm.entity.ModEntities;
+import com.peach.peachfarm.entity.client.ModBoatRenderer;
 import com.peach.peachfarm.item.ModCreativeModTabs;
 import com.peach.peachfarm.item.ModItems;
 import com.peach.peachfarm.loot.ModLootModifiers;
@@ -11,6 +13,7 @@ import com.peach.peachfarm.worldgen.tree.ModFoliagePlacers;
 import com.peach.peachfarm.worldgen.tree.ModTrunkPlacerTypes;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.Sheets;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
@@ -48,11 +51,16 @@ public class PeachFarm
 
         ModLootModifiers.register(modEventBus);
 
+        ModEntities.register(modEventBus);
+
         ModBlockEntities.register(modEventBus);
+
+
 
         ModTrunkPlacerTypes.register(modEventBus);
 
         ModFoliagePlacers.register(modEventBus);
+
 
         modEventBus.addListener(this::commonSetup);
 
@@ -111,6 +119,10 @@ public class PeachFarm
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
 
             Sheets.addWoodType(ModWoodTypes.PEACH);
+
+            EntityRenderers.register(ModEntities.MOD_BOAT.get(), pContext -> new ModBoatRenderer(pContext, false));
+            EntityRenderers.register(ModEntities.MOD_CHEST_BOAT.get(), pContext -> new ModBoatRenderer(pContext, true));
+
 
         }
     }

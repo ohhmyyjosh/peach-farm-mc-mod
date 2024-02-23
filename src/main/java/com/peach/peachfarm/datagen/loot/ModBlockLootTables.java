@@ -30,6 +30,17 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.dropSelf(ModBlocks.PEACH_SAPLING.get());
 
+        this.add(ModBlocks.PEACH_SIGN.get(), block ->
+                createSingleItemTable(ModItems.PEACH_SIGN.get()));
+        this.add(ModBlocks.PEACH_WALL_SIGN.get(), block ->
+                createSingleItemTable(ModItems.PEACH_SIGN.get()));
+        this.add(ModBlocks.PEACH_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.PEACH_HANGING_SIGN.get()));
+        this.add(ModBlocks.PEACH_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.PEACH_HANGING_SIGN.get()));
+
+
+
     }
 
     @Override

@@ -30,6 +30,12 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.STRIPPED_PEACH_WOOD.get());
 
                         pOutput.accept(ModBlocks.PEACH_PLANKS.get());
+                        pOutput.accept(ModItems.PEACH_SIGN.get());
+                        pOutput.accept(ModItems.PEACH_HANGING_SIGN.get());
+
+                        pOutput.accept(ModItems.PEACH_BOAT.get());
+                        pOutput.accept(ModItems.PEACH_CHEST_BOAT.get());
+
                         pOutput.accept(ModBlocks.PEACH_LEAVES.get());
 
                         pOutput.accept(ModBlocks.PEACH_SAPLING.get());

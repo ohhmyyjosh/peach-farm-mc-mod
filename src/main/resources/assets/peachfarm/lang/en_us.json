@@ -4,12 +4,20 @@
   "item.peachfarm.peach_pie": "Peach Pie",
   "item.peachfarm.peach_juice": "Peach Juice",
 
+  "item.peachfarm.peach_boat": "Peach Boat",
+  "item.peachfarm.peach_chest_boat": "Peach Chest Boat",
+
   "block.peachfarm.peach_log": "Peach Log",
   "block.peachfarm.peach_planks": "Peach Planks",
   "block.peachfarm.peach_wood": "Peach Wood",
   "block.peachfarm.stripped_peach_log": "Stripped Peach Log",
   "block.peachfarm.stripped_peach_wood": "Stripped Peach Wood",
+  "block.peachfarm.peach_sign": "Peach Sign",
+  "block.peachfarm.peach_hanging_sign": "Peach Hanging Sign",
+
   "block.peachfarm.peach_leaves": "Peach Leaves",
 
-  "block.peachfarm.peach_sapling": "Peach Sapling"
+  "block.peachfarm.peach_sapling": "Peach Sapling",
+
+  "entity.peachfarm.mod_chest_boat": "Boat with Chest"
 }
