@@ -82,8 +82,12 @@ public class PeachFarm
 //        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS)
 //            event.accept(EXAMPLE_BLOCK_ITEM);
 
-        if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS)
+        if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
             event.accept(ModItems.PEACH);
+            event.accept(ModItems.PEACH_COBBLER);
+            event.accept(ModItems.PEACH_JUICE);
+            event.accept(ModItems.PEACH_PIE);
+        }
 
     }
 

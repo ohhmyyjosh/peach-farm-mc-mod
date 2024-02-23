@@ -20,6 +20,9 @@ public class ModCreativeModTabs {
                     .title(Component.translatable("Peach Farm"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.PEACH.get());
+                        pOutput.accept(ModItems.PEACH_COBBLER.get());
+                        pOutput.accept(ModItems.PEACH_JUICE.get());
+                        pOutput.accept(ModItems.PEACH_PIE.get());
 
                         pOutput.accept(ModBlocks.PEACH_LOG.get());
                         pOutput.accept(ModBlocks.PEACH_WOOD.get());

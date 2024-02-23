@@ -1,6 +1,7 @@
 package com.peach.peachfarm.datagen.loot;
 
 import com.peach.peachfarm.block.ModBlocks;
+import com.peach.peachfarm.item.ModItems;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.block.Block;

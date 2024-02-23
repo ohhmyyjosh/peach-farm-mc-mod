@@ -46,6 +46,9 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         simpleItem(ModItems.PEACH);
+        simpleItem(ModItems.PEACH_COBBLER);
+        simpleItem(ModItems.PEACH_JUICE);
+        simpleItem(ModItems.PEACH_PIE);
 
         saplingItem(ModBlocks.PEACH_SAPLING);
 

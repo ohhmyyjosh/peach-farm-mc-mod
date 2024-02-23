@@ -1,5 +1,8 @@
 {
   "item.peachfarm.peach": "Peach",
+  "item.peachfarm.peach_cobbler": "Peach Cobbler",
+  "item.peachfarm.peach_pie": "Peach Pie",
+  "item.peachfarm.peach_juice": "Peach Juice",
 
   "block.peachfarm.peach_log": "Peach Log",
   "block.peachfarm.peach_planks": "Peach Planks",

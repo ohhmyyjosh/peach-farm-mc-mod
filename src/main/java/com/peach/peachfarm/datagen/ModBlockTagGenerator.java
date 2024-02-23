@@ -29,5 +29,17 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.PLANKS)
                 .add(ModBlocks.PEACH_PLANKS.get());
 
+        this.tag(BlockTags.LEAVES)
+                .add(ModBlocks.PEACH_LEAVES.get());
+
+        this.tag(BlockTags.SAPLINGS)
+                .add(ModBlocks.PEACH_SAPLING.get());
+
+        this.tag(BlockTags.LOGS)
+                .add(ModBlocks.PEACH_LOG.get())
+                .add(ModBlocks.PEACH_WOOD.get())
+                .add(ModBlocks.STRIPPED_PEACH_LOG.get())
+                .add(ModBlocks.STRIPPED_PEACH_WOOD.get());
+
     }
 }

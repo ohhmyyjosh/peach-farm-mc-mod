@@ -31,6 +31,12 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.STRIPPED_PEACH_LOG.get().asItem())
                 .add(ModBlocks.STRIPPED_PEACH_WOOD.get().asItem());
 
+        this.tag(ItemTags.LOGS)
+                .add(ModBlocks.PEACH_LOG.get().asItem())
+                .add(ModBlocks.PEACH_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_PEACH_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_PEACH_WOOD.get().asItem());
+
         this.tag(ItemTags.PLANKS)
                 .add(ModBlocks.PEACH_PLANKS.get().asItem());
     }
